@@ -1,0 +1,13 @@
+<?php
+$handle = fopen("php://stdin", "r");
+$N = intval(fgets($handle));
+
+if($N % 2 != 0){
+  fwrite(STDOUT, 'Wierd');
+}elseif($N >= 2 && $N <= 5) {
+  fwrite(STDOUT, 'Not Weird');
+}elseif ($N >= 6 && $N <= 20) {
+  fwrite(STDOUT, 'Weird');
+}elseif($N >= 20) {
+  fwrite(STDOUT, 'Not Weird');
+}
