@@ -11,3 +11,4 @@ if($N % 2 != 0){
 }elseif($N >= 20) {
   fwrite(STDOUT, 'Not Weird');
 }
+fclose($handle);
